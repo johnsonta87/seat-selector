@@ -3,7 +3,7 @@
     <p>Selected seats:</p>
 
     <ul class="selected-seats-list">
-      <li v-for="selected in seats.selected">{{ selected }}</li>
+      <li :key="selected" v-for="selected in seats.selected">{{ selected }}</li>
     </ul>
   </div>
 </template>
